@@ -8,7 +8,7 @@ from tmdbv3api import Movie
 
 
 st.set_page_config(
-    page_title="CineMatch",
+    page_title="CineWave",
     page_icon=":🎞️:",
     layout="wide",  
     initial_sidebar_state="expanded",
