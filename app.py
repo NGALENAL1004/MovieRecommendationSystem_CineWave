@@ -144,7 +144,7 @@ elif option == "Acteur":
                 movie_info = df.iloc[movie_index]
                 st.title(movie_info['Title'])  # Afficher le titre du film
                 st.write(f"Année de sortie : {int(movie_info['ReleaseYear'])}")  # Afficher l'année de sortie
-                st.write(f"Réalisateur : {', '.join(movie_info['Genres'])}")  # Afficher le réalisateur
+                st.write(f"Réalisateur : {movie_info['Directors']}")  # Afficher le réalisateur
                 actors_list = movie_info['Actors']  # Prendre les cinq premiers acteurs
                 actor=', '.join(actors_list).split(', ')[:10]
                 st.write(f"Acteurs principaux : {', '.join(actor)}")  # Afficher les acteurs principaux
@@ -169,7 +169,7 @@ elif option == "Réalisateur":
                 movie_info = df.iloc[movie_index]
                 st.title(movie_info['Title'])  # Afficher le titre du film
                 st.write(f"Année de sortie : {int(movie_info['ReleaseYear'])}")  # Afficher l'année de sortie
-                st.write(f"Réalisateur : {', '.join(movie_info['Directors'])}")  # Afficher le réalisateur
+                st.write(f"Réalisateur : {movie_info['Directors']}")  # Afficher le réalisateur
                 actors_list = movie_info['Actors'].split(', ')[:10]  # Prendre les cinq premiers acteurs
                 st.write(f"Acteurs principaux : {', '.join(actors_list)}")  # Afficher les acteurs principaux
                 st.write(f"Genre : {movie_info['Genres']}")  # Afficher le genre
