@@ -35,7 +35,7 @@ load_dotenv()
 tmdb.api_key = os.getenv('TMDB_API_KEY')
 
 ### Titre de l'application
-st.title("🎥🎞️CineMatch🎞️🎥: Votre système de recommendation de films")
+st.title("🎥🎞️CineWave🎞️🎥: Votre système de recommendation de films")
 st.markdown('<p>Développé par <span class="signature">AlMiDEV</span></p>', unsafe_allow_html=True)
 
 # Chargement des données depuis le fichier CSV
